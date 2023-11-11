@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Forms</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form action="">
+            <!-- Text -->
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Ex: Ahmad">
+            <br>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <br>
+
+            <!-- Email -->
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+
+            <!-- Checkbox -->
+            <p>Select your preferred language:</p>
+            <input type="checkbox" name="javascript" id="javascript" checked>
+            <label for="javascript">Javascript</label>
+            <input type="checkbox" name="java" id="java">
+            <label for="java">Java</label>
+            <input type="checkbox" name="c" id="c">c</input>
+            <br>
+
+            <!-- radio button -->
+            <p>Please select your age:</p>
+            <input type="radio" id="age1" name="age" value="30">
+            <label for="age1">0 - 30</label><br>
+            <input type="radio" id="age2" name="age" value="60">
+            <label for="age2">31 - 60</label><br>
+            <input type="radio" id="age3" name="age" value="100">
+            <label for="age3">61 - 100</label>
+            <br><br>
+
+            <!-- color -->
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+            <br><br>
+
+            <!-- date -->
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <br><br>
+
+            <!-- file -->
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+            <br><br>
+
+            <!-- number -->
+            <input type="number" id="quantity" name="quantity" min="1" max="5" step="1">
+            <br><br>
+
+            <!-- textarea -->
+            <p><label for="feedback ">Enter your feedback here :</label></p>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"> </textarea>
+            <br><br>
+
+            <!-- datalist -->
+            <label> Choose your favourite browser</label>
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <br><br>
+
+            <fieldset>
+                <legend> Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+                <br><br>
+            </fieldset>
+
+            <input type="submit" value="Sign Up">
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>All rights are reserved 2023 &copy;</p>
+    </footer>
+</body>
+
+</html>
