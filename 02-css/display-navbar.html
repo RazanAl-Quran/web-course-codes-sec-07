@@ -5,26 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
-        *{
-            margin:0;
-            padding:0;
+        * {
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
+
         ul {
             background-color: cadetblue;
             text-align: center;
             padding: 30px;
         }
+
         li {
             display: inline-block;
             margin-left: 10px;
         }
+
         li a {
             text-decoration: none;
             color: beige;
-            font-size: 20px;
+            font-size: 30px;
+            /* font-family: Georgia, 'Times New Roman', Times, serif; */
+            /* font-family: 'Ephesis', cursive; */
+            font-family: 'Roboto Condensed', sans-serif;
         }
+
         li a:hover {
             font-weight: bold;
         }
@@ -35,8 +47,8 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#"> Home</a></li>
-                <li> <a href="#">News</a></li>
+                <li><a href="#"> <i class="fa-solid fa-house"></i> Home</a></li>
+                <li> <a href="#"><i class="fa-solid fa-newspaper"></i> News</a></li>
                 <li> <a href="#"> Contact </a> </li>
                 <li> <a href="#"> About </a></li>
             </ul>
