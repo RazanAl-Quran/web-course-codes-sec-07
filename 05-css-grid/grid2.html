@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .grid-item {
+            border: 1px solid black;
+        }
+        .grid-container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 20% auto;
+            grid-template-rows: 15% auto 10%;
+            grid-template-areas: 
+            "header header"
+            "aside content"
+            "footer footer";
+        }
+        .grid-item-1 {
+            grid-area: header;
+            background-color: #e9c46a;
+        }
+        .grid-item-2 {
+            grid-area: aside;
+            background-color: #2a9d8f;
+        }
+        .grid-item-3 {
+            grid-area: content;
+            background-color: #e76f51;
+        }
+        .grid-item-4 {
+            grid-area: footer;
+            background-color: #f4a261;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item grid-item-1">headerrrrrrrrrrrr</div>
+        <div class="grid-item grid-item-2">asideeeeeeeeeee</div>
+        <div class="grid-item grid-item-3">contenttttttttttttt</div>
+        <div class="grid-item grid-item-4">footerrrrrrrrrrrrrrrr</div>
+    </div>
+</body>
+</html>

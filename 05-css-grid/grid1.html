@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        .grid-item {
+            border: 1px solid;
+
+        }
+        .grid-container {
+            display: grid;
+            height: 100vh;
+            /* grid-template-columns: 100px 200px; */
+            /* grid-template-columns: 100px 200px 100px; */
+            /* grid-template-columns: 100px 100px 100px; */
+            /* grid-template-columns: repeat(3,100px); */
+            /* grid-template-rows: repeat(3,100px); */
+            grid-auto-rows: 100px;
+            grid-template-columns: 1fr 2fr 1fr;
+            /* grid-column-gap: 10px; */
+            /* column-gap: 10px;
+            row-gap: 10px; */
+            /* gap: 10px 20px; */
+            /* gap: 10px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item grid-item-1">Item 1</div>
+        <div class="grid-item grid-item-2">Item 2</div>
+        <div class="grid-item grid-item-3">Item 3</div>
+        <div class="grid-item grid-item-4">Item 4</div>
+        <div class="grid-item grid-item-5">Item 5</div>
+        <div class="grid-item grid-item-6">Item 6</div>
+        <div class="grid-item grid-item-7">Item 7</div>
+        <div class="grid-item grid-item-7">Item 7</div>
+        <div class="grid-item grid-item-7">Item 7</div>
+        <div class="grid-item grid-item-7">Item 7</div>
+    </div>
+</body>
+
+</html>
