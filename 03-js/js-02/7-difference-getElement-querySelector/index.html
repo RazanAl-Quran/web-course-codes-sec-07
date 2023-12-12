@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>querySelectorAll</h1>
+    <p>querySelectorAll is supported in modern browsers and allows you to select elements using CSS selectors (even complex ones).</p>
+    <p>querySelectorAll gives you a static node</p>
+
+    <h1>getElementsByClassName</h1>
+    <p>
+        getElementsByClassName gives you a live node list
+    </p>
+    <p>
+        Typically faster in performance for selecting elements by class name compared to complex CSS selectors used in querySelectorAll
+    </p>
+
+    <p>The terms "static node list" and "live node list" refer to how the collection of nodes retrieved by JavaScript methods behaves when the underlying DOM (Document Object Model) changes.</p>
+
+    <br>
+    <br>
+
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <!-- <li>Item 4</li> -->
+    </ul>
+
+    <div class="myClass">Element 1</div>
+    <div class="myClass">Element 2</div>
+    <div class="myClass">Element 3</div>
+
+    <script>
+
+        // querySelectorAll >>> static node
+        const items = document.querySelectorAll('#myList li');
+        console.log(items.length); // Outputs: 3
+        // Later in the code, a new list item is added dynamically
+        const newListElement = document.createElement('li');
+        newListElement.textContent = 'Item 4';
+        document.getElementById('myList').appendChild(newListElement);
+        console.log(items.length); // Still outputs: 3 (static node list doesn't update)
+
+
+        // getElementsByClassName >>> live node
+        const elements = document.getElementsByClassName('myClass');
+        console.log(elements.length); // Outputs: 3
+        // Later in the code, a new element with the class 'myClass' is added dynamically
+        const newElement = document.createElement('div');
+        newElement.textContent = 'Element 4';
+        newElement.className = 'myClass';
+        document.body.appendChild(newElement);
+        console.log(elements.length); // Outputs: 4 (live node list updates)
+
+
+
+    </script>
+
+</body>
+
+</html>

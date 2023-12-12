@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="evenOdd()">Click me</button>
+    <p id="evenOddResult"></p>
+    <script>
+
+        function evenOdd() {
+            let num1 = parseInt(prompt('Enter your Number to check even/odd'));
+            console.log(num1);
+            console.log(typeof(num1));
+            if(num1 %2 == 0) {
+                document.getElementById('evenOddResult').innerHTML = 'even';
+            } else {
+                document.getElementById('evenOddResult').innerHTML = 'odd';
+            }
+        }
+    </script>
+</body>
+</html>

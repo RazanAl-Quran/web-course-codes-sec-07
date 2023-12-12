@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="welcomeMsg"> welcome </h1>
+    <label> please fill in your name </label>
+    <input type="text" id="name">
+    <input type="button" value="show" onClick="showName()">
+
+    <script>
+        function showName() {
+            let username = document.querySelector('#name').value;
+            console.log(username);
+            // document.querySelector('#welcomeMsg').innerHTML += username;
+            document.querySelector('#welcomeMsg').innerHTML = "Welcome "+ username;
+        }
+    </script>
+</body>
+
+</html>

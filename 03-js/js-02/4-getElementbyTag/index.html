@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p {
+            background-color: blue;
+        } */
+    </style>
+</head>
+<body>
+    <p>This is a p element.</p>
+    <p>This is also a p element.</p>
+    <p>Click the button to add a background color to the first p element (index 0) in the document.</p>
+    <div>Click the button to add a background color to the first p element (index 0) in the document.</div>
+
+    <button onclick="changeBackground()">Change Color</button>
+    <button onclick="reset()">Reset Color</button>
+
+    <script>
+        function changeBackground() {
+            let allPs = document.getElementsByTagName('p');
+            console.log(allPs);
+            allPs[0].style.backgroundColor = 'coral';
+            allPs[1].style.backgroundColor = 'red';
+            allPs[2].style.backgroundColor = 'yellow';
+        }
+
+        function reset () {
+            let allPs = document.getElementsByTagName('p');
+            console.log(allPs);
+            allPs[0].style.backgroundColor = 'white';
+            allPs[1].style.backgroundColor = '';
+            allPs[2].style.backgroundColor = '';
+        }
+    </script>
+</body>
+</html>
